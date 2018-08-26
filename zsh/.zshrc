@@ -2,9 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ehengao/.oh-my-zsh"
-export DOTFILES="/home/ehengao/dev/dotfiles"
-source $DOTFILES/entry.sh
+
+export SHELLRC=`realpath "$HOME/.zshrc"`
+export ZSH="$HOME/.oh-my-zsh"
+export DOTFILES=$(dirname $(dirname $SHELLRC))
+export ENTRYFILE=$DOTFILES/zsh/entry.sh
+source $ENTRYFILE
 export DEFAULT_USER=ehengao
 
 # Set name of the theme to load. Optionally, if you set this to "random"
