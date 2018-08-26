@@ -5,8 +5,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 " pymode
 let g:pymode = 1
-let g:python_host_prog = 'python'
-let g:python3_host_prog = 'python'
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/home/ehengao/.local/lib/miniconda3/bin/python'
 let g:pymode_python = 'python'
 let pymode_folding = 0
 let g:ycm_autoclose_preview_window_after_completion=1
